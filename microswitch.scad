@@ -8,6 +8,10 @@ module microswitch() {
         cube([19.8, 6, 10], center=true);
       translate([2.5, 0.5, 6])
         cube([2, 3.5, 5], center=true);
+      translate([0, 0, 10]) rotate([0,15,0])
+				cube([20,5,1], center=true);
+			translate([-9, 0, 14]) rotate([90,0,0])
+	      cylinder(r=2, h=5, center=true, $fn=12);
       for (x = [-8, -1, 8]) {
         translate([x, 0, 0])
           cube([0.6, 3.2, 13], center=true);
