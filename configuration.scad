@@ -20,3 +20,7 @@ thickness = 3.6;
 // OpenBeam or Misumi. Currently only 15x15 mm, but there is a plan
 // to make models more parametric and allow 20x20 mm in the future.
 extrusion = 15;
+
+// HiWin, THK or Misumi
+rail_width = 12;
+rail_thickness = 8;
