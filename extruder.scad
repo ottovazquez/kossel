@@ -30,7 +30,7 @@ module extruder() {
       cylinder (h=22, r=6.6);
 
       rotate([0,0,45]) {
-        //translate([14,0,0]) cylinder(h=22, r=1.6, $fn=12);
+        // translate([14,0,0]) cylinder(h=22, r=1.6, $fn=12);
         translate([0,14,0]) cylinder(h=22, r=1.6, $fn=12);
         translate([-14,0,0]) cylinder(h=22, r=1.6, $fn=12);
         translate([0,-14,0]) cylinder(h=22, r=1.6, $fn=12);
@@ -41,7 +41,7 @@ module extruder() {
     translate([16,21,21]) rotate([90,0,0]) cylinder (h=3.35, r=11.25);
 
     //pulley hub indentation
-    translate([16,20-2,21]) rotate([90,0,0]) cylinder (h=5.6, r=7);
+    translate([16,20-2,21]) rotate([90,0,0]) cylinder (h=5.6, r=7.6);
 
     //bearing screws
     translate([31,21,21]) rotate([90,0,0]) cylinder (h=22, r=2.6, $fn=12);
