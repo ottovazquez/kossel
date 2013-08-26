@@ -41,7 +41,7 @@ module extruder() {
     translate([16,21,21]) rotate([90,0,0]) cylinder (h=3.35, r=11.25);
 
     //pulley hub indentation
-    translate([16,20-2,21]) rotate([90,0,0]) cylinder (h=5.6, r=7.6);
+    translate([16,20-2,21]) rotate([90,0,0]) cylinder (h=5.6, r=7.55);
 
     //bearing screws
     translate([31,21,21]) rotate([90,0,0]) cylinder (h=22, r=2.6, $fn=12);
