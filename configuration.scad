@@ -21,6 +21,7 @@ thickness = 3.6;
 // OpenBeam or Misumi. Currently only 15x15 mm, but there is a plan
 // to make models more parametric and allow 20x20 mm in the future.
 extrusion = 15;
+extrusion_lengt = 240;
 
 // HiWin, THK or Misumi
 rail_width = 12;
@@ -29,3 +30,10 @@ rail_thickness = 8;
 // Placement for the NEMA17 stepper motors.
 motor_offset = 44;
 motor_length = 47;
+
+// Printer inner/outer dimmensions
+inner_gap=27;				// distance between inner vertex cone corners
+inner_offset=0.8;		// offset to fit the print into the printer frame
+k_inner_side=extrusion_lengt + 2*(inner_gap-inner_offset);
+k_inner_height=k_inner_side * sqrt(3) /2;
+k_outer_radius=2*k_inner_height/3;
