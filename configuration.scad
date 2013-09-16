@@ -5,11 +5,17 @@ extra_radius = 0.1;
 m3_nut_od = 6.1;
 m3_nut_radius = m3_nut_od/2 + 0.2 + extra_radius;
 m3_washer_radius = 3.5 + extra_radius;
+m3_head_radius = 3 + extra_radius;
 
 // Major diameter of metric 3mm thread.
 m3_major = 2.85;
 m3_radius = m3_major/2 + extra_radius;
 m3_wide_radius = m3_major/2 + extra_radius + 0.2;
+
+// Major diameter of metric 2.5mm thread.
+m2_major = 2.4;
+m2_radius = m2_major/2 + extra_radius;
+m2_wide_radius = m2_major/2 + extra_radius + 0.2;
 
 // NEMA17 stepper motors.
 motor_shaft_diameter = 5;
@@ -21,7 +27,7 @@ thickness = 3.6;
 // OpenBeam or Misumi. Currently only 15x15 mm, but there is a plan
 // to make models more parametric and allow 20x20 mm in the future.
 extrusion = 15;
-extrusion_lengt = 240;
+extrusion_length = 240;
 
 // HiWin, THK or Misumi
 rail_width = 12;
@@ -34,6 +40,6 @@ motor_length = 47;
 // Printer inner/outer dimmensions
 inner_gap=27;				// distance between inner vertex cone corners
 inner_offset=0.8;		// offset to fit the print into the printer frame
-k_inner_side=extrusion_lengt + 2*(inner_gap-inner_offset);
+k_inner_side=extrusion_length + 2*(inner_gap-inner_offset);
 k_inner_height=k_inner_side * sqrt(3) /2;
 k_outer_radius=2*k_inner_height/3;
