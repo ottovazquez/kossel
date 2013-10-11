@@ -38,8 +38,9 @@ motor_offset = 44;
 motor_length = 47;
 
 // Printer inner/outer dimmensions
-inner_gap=27;				// distance between inner vertex cone corners
-inner_offset=0.8;		// offset to fit the print into the printer frame
-k_inner_side=extrusion_length + 2*(inner_gap-inner_offset);
-k_inner_height=k_inner_side * sqrt(3) /2;
-k_outer_radius=2*k_inner_height/3;
+inner_gap=27;						// distance between inner vertex cone corners
+inner_offset=1.1;				// offset to fit the print into the printer frame 0.8 > 1
+
+inner_extrusion_length = extrusion_length + 2*(inner_gap-inner_offset);
+inner_height = inner_extrusion_length * sqrt(3) / 2;
+inner_radius = inner_height * 2 / 3;
